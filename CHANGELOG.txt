@@ -1,0 +1,26 @@
+version=0.0.8 Fri Mar 14 11:04:25 CDT 2014
+    * run SQL which does not return a result set
+    * support /dev/null as output file which means write nothing
+
+version=0.0.7 Mon Mar 10 12:51:02 CDT 2014
+    * add Psycopg2's "adapt" function to Jinja2 and Mako templating
+
+version=0.0.6 Fri Jan 24 15:30:13 CST 2014
+    * use search path for "show-plan" action
+
+version=0.0.5 Fri Jan 24 10:13:30 CST 2014
+    * ignore <control-c> within Python parent when "run-psql" is used
+
+version=0.0.4 date=Wed Jan 22 09:23:28 CST 2014
+    * support search_path with psql launcher
+    * don't crash when s3_usage_data isn't in config
+
+version=0.0.3 date=Mon Dec 16 17:17:01 CST 2013
+    * initial features all working
+
+version=0.0.2 date=Fri Dec 13 17:25:10 CST 2013
+    * initial functioning utility
+
+version=0.0.1 date=Mon Dec  9 07:38:36 CST 2013
+    * start development
+

@@ -1,0 +1,48 @@
+#!mako
+this is x: ${x}
+
+this is x*2: ${x * 2}
+
+${"this is some text" | u}
+
+pythagorean theorem:  ${pow(int(x),2) + pow(int(y),2)}
+
+% if x==5:
+    this is some output
+% endif
+
+% for a in ['one', 'two', 'three', 'four', 'five']:
+    % if a[0] == 't':
+    its two or three
+    % elif a[0] == 'f':
+    four/five
+    % else:
+    one
+    % endif
+% endfor
+
+%% some text
+
+    %% some more text
+
+<ul>
+% for a in ("one", "two", "three"):
+    <li>Item ${loop.index}: ${a}</li>
+% endfor
+</ul>
+
+## this is a comment.
+...text ...
+
+<%doc>
+    these are comments
+    more comments
+</%doc>
+
+here is a line that goes onto \
+another line.
+
+<%text filter="h">
+    heres some fake mako ${syntax}
+    <%def name="x()">${x}</%def>
+</%text>
